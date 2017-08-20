@@ -18,6 +18,8 @@ public class MoveAvatar : MonoBehaviour
 	public Animator animator;
     
     public Vector3 lastpo;
+    public bool isAttacking;
+
     [HideInInspector]
     public float dist;
     public enum AvatarAnimationState
@@ -43,6 +45,7 @@ public class MoveAvatar : MonoBehaviour
     void Update()
     {
        lastpo = transform.position;
+       if(!isAttacking)
        switch(state){
             case AvatarAnimationState.Idle:
                 animator.Play("Idle_Atk");
