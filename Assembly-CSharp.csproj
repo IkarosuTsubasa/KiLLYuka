@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{41DCC22E-73DA-939E-B48B-47E6EDB0A7FD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_0;UNITY_2017_1;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_RUNTIME_GI;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_NETWORK;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_IOS_NATIVE_CRASH_REPORTING;PLAYERCONNECTION_LISTENS_FIXED_PORT;DEBUGGER_LISTENS_FIXED_PORT;PLATFORM_SUPPORTS_ADS_ID;SUPPORT_ENVIRONMENT_VARIABLES;PLATFORM_SUPPORTS_PROFILER;PLATFORM_HAS_NO_SUPPORT_FOR_BUCKET_ALLOCATOR;STRICTCPP_NEW_DELETE_SIGNATURES;HAS_NEON_SKINNIG;UNITY_GFX_USE_PLATFORM_VSYNC;UNITY_INPUT_SIMULATE_EVENTS;PLATFORM_ALWAYS_USES_STDOUT_FOR_LOG;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;PLATFORM_IOS;UNITY_IOS;PLATFORM_IPHONE;UNITY_IPHONE;UNITY_IPHONE_API;SUPPORT_MULTIPLE_DISPLAYS;ENABLE_IL2CPP;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_IOS_ON_DEMAND_RESOURCES;ENABLE_IOS_APP_SLICING;UNITY_HAS_GOOGLEVR;ENABLE_MONO</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Asset\GOMap\Core\Map Builders\Attributes.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Map Builders\GOFeatureBehaviour.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Map Builders\GOFeatureMeshBuilder.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Map Builders\GOLineMesh.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Map Builders\GOMapEditor.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Map Builders\GOMapObjects\GOESRITile.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Map Builders\GOMapObjects\GOFeature.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Map Builders\GOMapObjects\GOMap.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Map Builders\GOMapObjects\GOMapboxTile.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Map Builders\GOMapObjects\GOMapzenProtoTile.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Map Builders\GOMapObjects\GOMapzenTile.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Map Builders\GOMapObjects\GOOSMTile.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Map Builders\GOMapObjects\GOPbfProcedure.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Map Builders\GOMapObjects\GOPBFTile.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Map Builders\GOMapObjects\GOPBFTileAsync.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Map Builders\GOMapObjects\GORoadFeature.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Map Builders\GOMapObjects\GOStreetName.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Map Builders\GOMapObjects\GOTile.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Map Builders\GOObject.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Map Builders\ReverseNormals.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Map Builders\SimpleExtruder.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Map Rendering\GOLayer.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Map Rendering\GOPOILayer.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Map Rendering\GORenderingOptions.cs" />
+     <Compile Include="Assets\Asset\GOMap\Core\Utils\GoMapMenu.cs" />
+     <Compile Include="Assets\Asset\GOMap\Demo\GOCar\GOCarAvatar.cs" />
+     <Compile Include="Assets\Asset\GOMap\Demo\Scripts\AnimatePrefab.cs" />
+     <Compile Include="Assets\Asset\GOMap\Demo\Scripts\GO4Square.cs" />
+     <Compile Include="Assets\Asset\GOMap\Demo\Scripts\GOEnvironment.cs" />
+     <Compile Include="Assets\Asset\GOMap\Demo\Scripts\GOPlaces.cs" />
+     <Compile Include="Assets\Asset\GOMap\Demo\Scripts\GOToLocationDemo.cs" />
+     <Compile Include="Assets\Asset\GOMap\Demo\Scripts\MoveAvatar.cs" />
+     <Compile Include="Assets\Asset\GOMap\Demo\Scripts\RotateClouds.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\AR\Coordinates.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\AR\GPSEncoder.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\AR\GPSSpeedUtils.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\AR\LocationManager.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\CameraControls\GOCameraDrone.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\CameraControls\GOCameraLook.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\CameraControls\GOOrbit.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\MapboxLayerExtensions.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\src\ExtensionMethods\Enums.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\src\ExtensionMethods\VectorTile.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\src\ExtensionMethods\VectorTileFeature.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\src\Geometry\clipper.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\src\Geometry\DecodeGeometry.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\src\Geometry\Geometry.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\src\Geometry\Util.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\src\PbfReader\Constants.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\src\PbfReader\PbfReader.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\src\VectorTileReader\VectorTile.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\src\VectorTileReader\VectorTileFeature.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\src\VectorTileReader\VectorTileLayer.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\src\VectorTileReader\VectorTileReader.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\Compression.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Checksum\Adler32.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Checksum\BZip2Crc.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Checksum\Crc32.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Checksum\IChecksum.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Encryption\PkzipClassic.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Encryption\SharpZipBaseException.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Encryption\ZipAESStream.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Encryption\ZipAESTransform.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\FileSystemScanner.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\INameTransform.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\IScanFilter.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\NameFilter.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\PathFilter.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\StreamUtils.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\WindowsPathUtils.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\Compression\Deflater.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\Compression\DeflaterConstants.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\Compression\DeflaterEngine.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\Compression\DeflaterHuffman.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\Compression\DeflaterPending.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\Compression\Inflater.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\Compression\InflaterDynHeader.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\Compression\InflaterHuffmanTree.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\Compression\PendingBuffer.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\Compression\Streams\DeflaterOutputStream.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\Compression\Streams\InflaterInputStream.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\Compression\Streams\OutputWindow.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\Compression\Streams\StreamManipulator.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\FastZip.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\IEntryFactory.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\WindowsNameTransform.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\ZipConstants.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\ZipEntry.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\ZipEntryFactory.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\ZipException.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\ZipExtraData.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\ZipFile.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\ZipHelperStream.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\ZipInputStream.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\ZipNameTransform.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\Core\Zip\ZipOutputStream.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\GZip.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\GZipConstants.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\GZipException.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\GzipInputStream.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Decoders\Mapbox\vector-tile-cs-master\Utils\SharpZipLib\GzipOutputStream.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\GORoutine\ContinuationManager.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\GORoutine\GOCoroutineUtils.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\GORoutine\GORoutine.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Extensions.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\FileHandler.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\GOAttributes.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\GOCanvasManager.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\GOClipPlane.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\GoClipPlaneMono.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\GOMakePrefab.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\GOMatHolder.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\GOPreloadedMap.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\GOUtils.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\MeshExtrusion.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\MiniJSON.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Mesh.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\Delaunay\DelaunayTriangle.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\Delaunay\Sweep\AdvancingFront.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\Delaunay\Sweep\AdvancingFrontNode.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\Delaunay\Sweep\DTSweep.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\Delaunay\Sweep\DTSweepBasin.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\Delaunay\Sweep\DTSweepConstraint.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\Delaunay\Sweep\DTSweepContext.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\Delaunay\Sweep\DTSweepDebugContext.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\Delaunay\Sweep\DTSweepEdgeEvent.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\Delaunay\Sweep\DTSweepPointComparator.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\Delaunay\Sweep\PointOnEdgeException.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\ITriangulatable.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\Orientation.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\Polygon\Contour.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\Polygon\Polygon.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\Polygon\PolygonPoint.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\Polygon\PolygonSet.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\Polygon\PolygonUtil.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\Sets\ConstrainedPointSet.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\Sets\PointSet.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\TriangulationAlgorithm.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\TriangulationConstraint.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\TriangulationContext.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\TriangulationDebugContext.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\TriangulationMode.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\TriangulationPoint.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\Util\PointGenerator.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\Util\PolygonGenerator.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Triangulation\Util\TriangulationUtil.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Utility\FixedArray3.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Utility\FixedBitArray3.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Utility\MathUtil.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Utility\Point2D.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Utility\Point2DList.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\Utility\Rect2D.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\SimpleExtruder.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Threading\ParseJob.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Threading\ThreadedJob.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Helpers\Triangulator.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Inspector\InspectorButton.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Inspector\RegexAttribute.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Inspector\RegexDrawer.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Inspector\ShowOnlyAttribute.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Inspector\ShowOnlyDrawer.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Networking\GOUrlRequest.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Shared Core\GODEMTexture2D.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Shared Core\GOEnumUtils.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Shared Core\GOMesh.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Shared Core\GOMeshExtrusion.cs" />
+     <Compile Include="Assets\Asset\GOMap\GOShared\Shared Core\MeshJob.cs" />
+     <Compile Include="Assets\Asset\Yuka\Scripts\AnimationUpdate.cs" />
+     <Compile Include="Assets\Asset\Yuka\Scripts\controller.cs" />
+     <Compile Include="Assets\Asset\Yuka\Scripts\Swapper.cs" />
+     <Compile Include="Assets\Asset\Yuka\Scripts\ThirdPersonCamera.cs" />
+     <Compile Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\BlurEffect.cs" />
+     <Compile Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\ColorCorrectionEffect.cs" />
+     <Compile Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\ContrastStretchEffect.cs" />
+     <Compile Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\GlowEffect.cs" />
+     <Compile Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\GrayscaleEffect.cs" />
+     <Compile Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\ImageEffectBase.cs" />
+     <Compile Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\ImageEffects.cs" />
+     <Compile Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\MotionBlur.cs" />
+     <Compile Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\NoiseEffect.cs" />
+     <Compile Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\SepiaToneEffect.cs" />
+     <Compile Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\SSAOEffect.cs" />
+     <Compile Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\TwirlEffect.cs" />
+     <Compile Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\VortexEffect.cs" />
+     <Compile Include="Assets\Asset\Yuka\Standard Assets\Scripts\General Scripts\ActivateTrigger.cs" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Shader\Unitychan_chara_hada_blend.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
+     <None Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\LICENSE.txt" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Shader\Unitychan_chara_hada.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowConeTap.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Shader\Unitychan_chara_hair.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SunShaftsComposite.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurves.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ScreenSpaceAmbientObscurance.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\NFAA.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\VignetteShader.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Shader\Unitychan_chara_eye.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\MotionBlur.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MobileBloom.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowCompose.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Shader\readme.txt" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\MinMaxReduction.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\SSAA.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\RadialBlur.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Shader\Unitychan_chara_eye_blend.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Shader\Unitychan_chara_akarami_blend.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Shader\Unitychan_chara_eyelash_blend.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ContrastComposite.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset3.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\FisheyeShader.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Apply.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Shader\Unitychan_chara_fuku.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Shader\Unitychan_chara_hair_ds.shader" />
+     <None Include="Assets\Asset\Yuka\README.txt" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MobileBlur.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SSAOShader.shader" />
+     <None Include="Assets\Asset\GOMap\Demo\Shaders\UnlitSingleColor.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ConvertDepth.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurvesSimple.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderYUV.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowEffectDownsample.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CreaseApply.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ChromaticAberrationShader.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlobalFog.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Luminance.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Shader\Unitychan_chara_fuku_ds.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionSelective.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\Bokeh34.shader" />
+     <None Include="Assets\Asset\GOMap\Demo\Shaders\InsideShader.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlurDX11.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+     <None Include="Assets\Plugins\UniRx\ReadMe.txt" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\BlurEffectConeTaps.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlur.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\DLAA.shader" />
+     <None Include="Assets\Asset\GOMap\GOShared\Helpers\Poly2Mesh\Poly2Tri\AUTHORS.txt" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrainDX11.shader" />
+     <None Include="Assets\Asset\GOMap\Demo\Shaders\TransparentShader.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableBlur.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\MotionBlurClear.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionEffect.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GrayscaleEffect.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SepiaToneEffect.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\TwirlEffect.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VortexEffect.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Adaptation.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrain.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Tonemapper.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA2.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrection3DLut.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\EdgeDetectNormals.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\PrepareSunShaftsBlur.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\Blend.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\BlendModesOverlay.shader" />
+     <None Include="Assets\Asset\GOMap\GOShared\Shaders\GOOneSidedText.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SimpleClear.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA3Console.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset2.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+     <None Include="Assets\Asset\Yuka\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendForBloom.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{33402DBB-B07B-0298-EBCB-E6A54AAFCC4B}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
