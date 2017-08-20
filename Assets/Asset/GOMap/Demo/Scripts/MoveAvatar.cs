@@ -45,7 +45,7 @@ public class MoveAvatar : MonoBehaviour
        lastpo = transform.position;
        switch(state){
             case AvatarAnimationState.Idle:
-                animator.Play("Idle_B");
+                animator.Play("Idle_Atk");
                 break;
             case AvatarAnimationState.Run:
                 animator.Play("Run_2");
