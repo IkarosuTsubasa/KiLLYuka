@@ -857,7 +857,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11458246, guid: 2eb893fe48df34d2f8555a95c4675ac6, type: 2}
       propertyPath: mapzen_api_key
-      value: 
+      value: mapzen-6Uoxecc
       objectReference: {fileID: 0}
     - target: {fileID: 11458246, guid: 2eb893fe48df34d2f8555a95c4675ac6, type: 2}
       propertyPath: layers.Array.data[1].avoid.Array.data[2]
@@ -1130,16 +1130,16 @@ MonoBehaviour:
   zoomLevel: 16
   demoLocation: 7
   demo_CenterWorldCoordinates:
-    latitude: 41.905263
-    longitude: 12.495564
+    latitude: 48.873769
+    longitude: 2.294745
     altitude: 0
-    timestampLastUpdate: 0
-  demo_CenterWorldTile: {x: 70078, y: 48699}
+    timestampLastUpdate: 1503420838.074911
+  demo_CenterWorldTile: {x: 33185, y: 22541}
   currentLocation:
-    latitude: 41.910509366663945
-    longitude: 12.476284503936768
+    latitude: 48.873769
+    longitude: 2.294745
     altitude: 0
-    timestampLastUpdate: 0
+    timestampLastUpdate: 1503420838.074911
   desiredAccuracy: 70
   updateDistance: 0.1
   updateEvery: 0.01
