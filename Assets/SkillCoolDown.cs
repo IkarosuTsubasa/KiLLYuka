@@ -10,7 +10,9 @@ public class SkillCoolDown : MonoBehaviour {
 
 	public float cooldown; 
 	public float currentCoolDown;
-	public Image SkillButton;
+	public Image skillButton;
+	public string skillName;
+	public GameObject playerobject;
 	private void Start(){
 		currentCoolDown = 5;
 		this.UpdateAsObservable()
@@ -20,12 +22,13 @@ public class SkillCoolDown : MonoBehaviour {
 	void Updateimage()
 	{
 		currentCoolDown += 0.1f;
-		SkillButton.fillAmount = currentCoolDown/cooldown; 
+		skillButton.fillAmount = currentCoolDown/cooldown; 
 	}
 	void OnClick() 
 	{
 		if(currentCoolDown >= cooldown)
 		{	//TODO: something
+			playerobject.GetComponent<Animator>().Play(skillName);
 			currentCoolDown = 0;
 		}
 	}

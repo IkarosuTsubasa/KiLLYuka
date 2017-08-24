@@ -723,7 +723,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldown: 5
   currentCoolDown: 0
-  SkillButton: {fileID: 923777538}
+  skillButton: {fileID: 923777538}
+  skillName: Atk1
+  playerobject: {fileID: 507422072}
 --- !u!1 &507422072 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 146826, guid: 031fb7c94da789042834fc58d0d5503c, type: 2}

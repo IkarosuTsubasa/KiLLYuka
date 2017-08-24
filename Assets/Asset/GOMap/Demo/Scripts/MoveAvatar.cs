@@ -45,6 +45,13 @@ public class MoveAvatar : MonoBehaviour
     void Update()
     {
        lastpo = transform.position;
+       if(animator.GetCurrentAnimatorStateInfo(0).tagHash.Equals(Animator.StringToHash("Atk1"))){
+           isAttacking = true;
+       }
+       else{
+           isAttacking = false;
+       }
+
        if(!isAttacking)
        switch(state){
             case AvatarAnimationState.Idle:
