@@ -19,7 +19,7 @@ public class MoveAvatar : MonoBehaviour
     
     public Vector3 lastpo;
     public bool isAttacking;
-
+    public GameObject gameManger;
     [HideInInspector]
     public float dist;
     public enum AvatarAnimationState
@@ -109,6 +109,7 @@ public class MoveAvatar : MonoBehaviour
         while (elapsedTime < time)
         {
             transform.position = Vector3.Lerp(lastPosition, currentPosition, (elapsedTime / time));
+            if(gameManger.GetComponent<TouchTest>().TouchObject == null)
             avatarFigure.transform.rotation = Quaternion.Lerp(avatarFigure.transform.rotation, finalRotation, (elapsedTime / time));
 
             elapsedTime += Time.deltaTime;
